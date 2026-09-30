@@ -1,10 +1,8 @@
 - cvssv3: 'CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H'
   priority: 3
   remediationComplexity: 2
-  category: Physical Security
   details:
-    - references: []
-      locale: EN
+    - locale: EN
       title: MIFARE Classic - Authentication by UID only
       vulnType: Pentest
       description: >-
@@ -32,25 +30,15 @@
         sectors. In this course you need to make sure to use safe technology
         like <em>MIFARE DESFire</em>, as for example the MIFARE Classic
         technology is broken and full of security flaws.</p>
+      references: []
       customFields: []
+  category: Physical Security
 
 - cvssv3: 'CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H'
   priority: 3
   remediationComplexity: 3
-  category: Physical Security
   details:
-    - references:
-        - >-
-          [1]
-          https://www.researchgate.net/publication/1915327_A_practical_attack_on_the_MIFARE_classic
-        - >-
-          [2]
-          http://www.cs.ru.nl/R.Verdult/Ciphertext-only_Cryptanalysis_on_Hardened_Mifare_Classic_Cards-CCS_2015.pdf
-        - '[3] https://github.com/equipter/mfkey32v2'
-        - >-
-          [4]
-          https://www.mifare.net/en/products/chip-card-ics/mifare-classic/security-statement-on-crypto1-implementations/
-      locale: EN
+    - locale: EN
       title: Usage of MIFARE Classic technology
       vulnType: Pentest
       description: >-
@@ -82,5 +70,17 @@
         considered save [4] and should not be used anymore, when it comes to
         managing access rights or other security relevant implementations. The
         most modern successor is <em>MIFARE DESFire</em>. </p>
+      references:
+        - >-
+          [1]
+          https://www.researchgate.net/publication/1915327_A_practical_attack_on_the_MIFARE_classic
+        - >-
+          [2]
+          http://www.cs.ru.nl/R.Verdult/Ciphertext-only_Cryptanalysis_on_Hardened_Mifare_Classic_Cards-CCS_2015.pdf
+        - '[3] https://github.com/equipter/mfkey32v2'
+        - >-
+          [4]
+          https://www.mifare.net/en/products/chip-card-ics/mifare-classic/security-statement-on-crypto1-implementations/
       customFields: []
+  category: Physical Security
 
